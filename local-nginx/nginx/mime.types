@@ -1,0 +1,6 @@
+types {
+  application/javascript js;
+  image/x-icon ico;
+  text/css css;
+  text/html html;
+}
