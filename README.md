@@ -21,11 +21,11 @@ will overwrite the 'latest' tag in the registry.
 
 ### Names and Versions
 
-Shipyard's `build.sh` automatically names and tags instances based on the
+docker-builder's `build.sh` automatically names and tags instances based on the
 following:
 
 - `name:<checksum>` - git short commit hash for the shipyard repo
-- `name:<version>` - if specified in [Metadata](#shipyard-metadata)
+- `name:<version>` - if specified in [Metadata](#metadata)
 - `name:latest` - if `DOCKER_LATEST=true`
 
 # Dockerfiles
@@ -51,6 +51,6 @@ Given the following header, `build.sh` would create a container tagged
 `dockerhub/rickrussell/ansible:2.2.0`:
 
 ```dockerfile
-# NAME dockerhub/rickrussell/ansible
+# NAME rickrussell/ansible
 # VERSION 2.2.0
 ```
